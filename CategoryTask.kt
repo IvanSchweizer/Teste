@@ -77,7 +77,7 @@ class CategoryTask(private val callback: Callback) {
 
     private fun toCategories(jsonAsString: String): List<Category> {
         val categories = mutableListOf<Category>()
-        Log.i("Teste",jsonAsString)
+       
         val jsonRoot = JSONObject(jsonAsString)
         val jsonCategories = jsonRoot.getJSONArray("category")
         for (i in 0 until jsonCategories.length()) {
